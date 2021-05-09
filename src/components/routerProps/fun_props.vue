@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "router_props",
+  name: "fun_props",
   props: ["sid"],
 };
 </script>
