@@ -1,5 +1,9 @@
 <template>
-  <div>{{ todos }}</div>
+  <div>
+    <p>{{ todos }}</p>
+    <p>{{ done }}</p>
+    <p>{{ id(1) }}</p>
+  </div>
 </template>
 
 <script>
@@ -14,6 +18,8 @@ export default {
   computed: {
     ...mapGetters({
       todos: "doneTodos",
+      done: "doneTodosCounts",
+      id: "getTodoById",
     }),
   },
 };

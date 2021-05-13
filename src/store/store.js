@@ -37,6 +37,12 @@ export default new Vuex.Store({
     },
     incre2(state) {
       state.local++;
+    },
+    increM(state, payload) {
+      state.num += payload.mount;
+    },
+    increC(state, payload) {
+      state.count += payload.mount;
     }
   }
 });

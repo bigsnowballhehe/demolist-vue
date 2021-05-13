@@ -2,20 +2,25 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view></router-view>
-    <state-first></state-first>
+    <state-first-vue></state-first-vue>
     <getter-test></getter-test>
+    <div>
+      <p>mutation</p>
+      <mutation-first-vue></mutation-first-vue>
+    </div>
   </div>
 </template>
 
 <script>
-import stateFirst from "@/components/vuex/stateFirst";
-import getterTest from "@/components/vuex/getterTest";
-
+import getterTest from "@/components/vuex/getterTest.vue";
+import stateFirstVue from "./components/vuex/stateFirst.vue";
+import mutationFirstVue from "./components/vuex/mutationFirst.vue";
 export default {
   name: "App",
   components: {
-    stateFirst,
+    stateFirstVue,
     getterTest,
+    mutationFirstVue,
   },
 };
 </script>

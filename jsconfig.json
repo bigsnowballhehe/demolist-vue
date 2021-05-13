@@ -11,4 +11,7 @@
       "./src/**/*.vue",
       "./src/**/*.js",
     ],
+    "exclude": [
+      "node_modules"
+    ]
   }
