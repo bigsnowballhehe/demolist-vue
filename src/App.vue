@@ -2,15 +2,24 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view></router-view>
+    <state-first></state-first>
+    <getter-test></getter-test>
   </div>
 </template>
 
 <script>
+import stateFirst from "@/components/vuex/stateFirst";
+import getterTest from "@/components/vuex/getterTest";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    stateFirst,
+    getterTest,
+  },
 };
 </script>
+   
 
 <style>
 #app {

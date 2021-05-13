@@ -1,0 +1,23 @@
+<template>
+  <div>{{ todos }}</div>
+</template>
+
+<script>
+import { mapGetters } from "vuex";
+export default {
+  name: "getterTest",
+  data() {
+    return {
+      todo: 1,
+    };
+  },
+  computed: {
+    ...mapGetters({
+      todos: "doneTodos",
+    }),
+  },
+};
+</script>
+
+<style>
+</style>
