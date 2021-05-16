@@ -14,17 +14,7 @@ export default {
       { id: 3, text: "wtw", done: true }
     ]
   },
-  getters: {
-    doneTodos: state => {
-      return state.todos.filter(todo => todo.done);
-    },
-    doneTodosCounts: (state, getters) => {
-      return getters.doneTodos.length;
-    },
-    getTodoById: state => id => {
-      return state.todos.find(todo => todo.id == id);
-    }
-  },
+
   mutations: {
     increament(state) {
       state.count++;
