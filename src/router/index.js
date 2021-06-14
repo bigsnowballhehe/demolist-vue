@@ -15,7 +15,7 @@ const routes = [
   {
     path: "/fun_prop",
     name: "fun_props",
-    props: route => ({ sid: route.query.sid + 1 }),
+    props: route => ({ sid: route.query.sid - 1 }),
     component: () =>
       import(
         /* webpackChunkName: "routerProp" */ "@/components/routerProps/fun_props.vue"
