@@ -20,6 +20,10 @@ const routes = [
       import(
         /* webpackChunkName: "routerProp" */ "@/components/routerProps/fun_props.vue"
       )
+  },
+  {
+    path: "/ckeditor",
+    component: () => import("@/components/ckEditor/index.vue")
   }
 ];
 
