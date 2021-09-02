@@ -7,15 +7,20 @@
 
 <script>
 export default {
-  name: "router_props",
-  props: ["sid"],
+  name: 'RouterProps',
+  props: {
+    sid: {
+      type: String,
+      default: ''
+    }
+  },
   data() {
-    return {};
+    return {}
   },
   mounted() {
-    console.log(this.$route.params);
-  },
-};
+    console.log(this.$route.params)
+  }
+}
 </script>
 
 <style>

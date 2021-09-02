@@ -6,6 +6,9 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    before: require("./mock/index")
+    before: require('./mock/index')
+  },
+  configureWebpack: {
+    devtool: 'source-map'
   }
-};
+}

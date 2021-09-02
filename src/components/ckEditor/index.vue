@@ -1,30 +1,30 @@
 <template>
   <div id="app">
     <ckeditor
-      :editor="editor"
       v-model="editorData"
+      :editor="editor"
       :config="editorConfig"
-    ></ckeditor>
+    />
   </div>
 </template>
 
 <script>
-import CKEditor from "@ckeditor/ckeditor5-vue2";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import CKEditor from '@ckeditor/ckeditor5-vue2'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 export default {
-  name: "app",
+  name: 'App',
   components: {
-    ckeditor: CKEditor.component,
+    ckeditor: CKEditor.component
   },
   data() {
     return {
       editor: ClassicEditor,
-      editorData: "<p>Content of the editor.</p>",
+      editorData: '<p>Content of the editor.</p>',
       editorConfig: {
         // The configuration of the editor.
-      },
-    };
-  },
-};
+      }
+    }
+  }
+}
 </script>

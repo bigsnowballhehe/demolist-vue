@@ -4,9 +4,14 @@
 
 <script>
 export default {
-  name: "fun_props",
-  props: ["sid"],
-};
+  name: 'FunProps',
+  props: {
+    sid: {
+      type: String,
+      default: ''
+    }
+  }
+}
 </script>
 
 <style>
